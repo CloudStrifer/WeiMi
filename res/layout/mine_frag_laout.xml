@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <ScrollView android:layout_width="match_parent"
+                android:layout_height="match_parent">
+        <RelativeLayout android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+            <RelativeLayout android:id="@+id/mine_one_rl"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:layout_marginTop="@dimen/m_martop"
+                            android:paddingBottom="@dimen/m_martop">
+
+                <ImageView android:id="@+id/mine_head"
+                           android:layout_width="@dimen/m_head_hei"
+                           android:layout_height="@dimen/m_head_hei"
+                           android:layout_marginLeft="@dimen/m_marleft"
+                           android:layout_marginTop="@dimen/m_martop"
+                           android:background="@drawable/default_avatar"/>
+
+                <LinearLayout android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:layout_toRightOf="@id/mine_head"
+                              android:layout_marginLeft="@dimen/m_marleft"
+                              android:layout_alignTop="@id/mine_head"
+                              android:orientation="vertical">
+
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:text="易农"
+                              android:textSize="20sp"/>
+
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:text="易农号：111111"
+                              android:layout_marginTop="8dp"
+                              android:textColor="@color/black"/>
+
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:text="手机号：130XXXXXX"
+                              android:layout_marginTop="8dp"
+                              android:textColor="@color/black"/>
+
+                </LinearLayout>
+
+                <ImageView android:layout_width="@dimen/m_qrhei"
+                           android:layout_height="@dimen/m_qrhei"
+                           android:layout_centerVertical="true"
+                           android:layout_marginRight="@dimen/m_marleft"
+                           android:background="@drawable/qrcode_selector"
+                           android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+
+            <LinearLayout android:id="@+id/me_tow"
+                          android:layout_width="match_parent"
+                          android:layout_marginTop="@dimen/m_martop"
+                          android:layout_height="wrap_content"
+                          android:layout_below="@id/mine_one_rl"
+                          android:paddingBottom="@dimen/m_martop"
+                          android:orientation="vertical">
+
+                <RelativeLayout
+                        android:id="@+id/mine_village"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/onclick_selector"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/serve_linea_padding">
+
+                    <ImageView
+                            android:id="@+id/fc"
+                            android:layout_width="@dimen/serve_image_width"
+                            android:layout_height="@dimen/serve_image_width"
+                            android:src="@drawable/friend_cirle"/>
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="@dimen/serve_text_leftpadding"
+                            android:text="@string/m_village"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@id/fc"
+                            android:textSize="@dimen/serve_textSzie"/>
+                </RelativeLayout>
+
+                <ImageView android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:background="@drawable/line"/>
+                <LinearLayout
+                        android:id="@+id/mine_message"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/onclick_selector"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/serve_linea_padding">
+
+                    <ImageView
+                            android:layout_width="@dimen/serve_image_width"
+                            android:layout_height="@dimen/serve_image_height"
+                            android:src="@drawable/messge"/>
+
+                    <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="@dimen/serve_text_leftpadding"
+                            android:text="@string/m_message"
+                            android:textSize="@dimen/serve_textSzie"/>
+                </LinearLayout>
+
+
+                <RelativeLayout
+                        android:id="@+id/mine_set"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/onclick_selector"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="@dimen/m_martop"
+                        android:padding="@dimen/serve_linea_padding">
+
+                    <ImageView
+	                        android:id="@+id/mine_set"
+                            android:layout_width="@dimen/serve_image_width"
+                            android:layout_height="@dimen/serve_image_height"
+                            android:src="@drawable/set"/>
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="@dimen/serve_text_leftpadding"
+                            android:text="@string/m_set"
+                            android:layout_centerVertical="true"
+                            android:textSize="@dimen/serve_textSzie"
+                            android:layout_toRightOf="@id/mine_set"/>
+                </RelativeLayout>
+                
+                <ImageView android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:background="@drawable/line"/>
+                
+                <LinearLayout
+                        android:id="@+id/mine_collect"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/onclick_selector"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/serve_linea_padding">
+
+                    <ImageView
+                            android:layout_width="@dimen/serve_image_width"
+                            android:layout_height="@dimen/serve_image_height"
+                            android:src="@drawable/collect"/>
+
+                    <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="@dimen/serve_text_leftpadding"
+                            android:text="@string/m_collect"
+                            android:textSize="@dimen/serve_textSzie"/>
+                </LinearLayout>
+
+                <ImageView android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:background="@drawable/line"/>
+
+
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+</RelativeLayout>

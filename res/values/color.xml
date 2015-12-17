@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="white">#ffffff</color>
+    <color name="main_color">#ae4c8dae</color>
+    <color name="red">#f11c1c</color>
+    <color name="blue">#2c82d9</color>
+    <color name="gray">#666666</color>
+    <color name="black">#444444</color>
+
+    
+       <color name="onclick">#99f1f6fd</color>
+       <color name="backgroundcolor">#fff0f1f1</color>
+       <color name="transparent">#00000000</color>  
+    	  
+</resources>

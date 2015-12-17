@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/backgroundcolor"
+    tools:ignore="ContentDescription" >
+
+    <!-- 标题栏 -->
+    <LinearLayout
+        android:id="@+id/home_layout_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="top"
+        android:background="@drawable/title_bg"
+        android:gravity="center" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/home_topbar_bg"
+            android:gravity="center"
+            android:orientation="horizontal" >
+			
+			
+			<!-- 热点 -->
+            <Button
+                android:id="@+id/home_bt_hot"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:layout_margin="0.0dip"
+                android:layout_weight="1.0"
+                android:background="@null"
+                android:padding="0.0dip"
+                android:paddingBottom="2.0dip"
+                android:scaleType="center"
+                android:text="@string/hot_info"
+                android:textColor="@color/white"
+                />
+            
+            
+            <!-- 市场 -->
+            <Button
+                android:id="@+id/home_bt_supermarket"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:layout_margin="0.0dip"
+                android:layout_weight="1.0"
+                android:background="@null"
+                android:padding="0.0dip"
+                android:paddingBottom="2.0dip"
+                android:scaleType="center"
+			    android:text="@string/supermarket"
+                android:textColor="@color/white"                
+                 />
+            
+             <!-- 经济 -->
+            <Button
+                android:id="@+id/home_bt_economic"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:layout_margin="0.0dip"
+                android:layout_weight="1.0"
+                android:background="@null"
+                android:padding="0.0dip"
+                android:paddingBottom="2.0dip"
+                android:scaleType="center"
+				android:text="@string/economic"
+                android:textColor="@color/white"          
+			                
+              />
+            
+            
+             <!-- 社会 -->
+            <Button
+                android:id="@+id/home_bt_social"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:layout_margin="0.0dip"
+                android:layout_weight="1.0"
+                android:background="@null"
+                android:padding="0.0dip"
+                android:paddingBottom="2.0dip"
+                android:scaleType="center"
+				android:text="@string/social"
+                android:textColor="@color/white"                     
+                 />
+            
+            <!--农产品 -->
+            <Button
+                android:id="@+id/home_bt_argproducts"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:layout_margin="0.0dip"
+                android:layout_weight="1.0"
+                android:background="@null"
+                android:padding="0.0dip"
+                android:paddingBottom="2.0dip"
+                android:scaleType="center"
+				android:text="@string/agr_products"
+                android:textColor="@color/white"  
+                 />
+             
+            
+            
+        </LinearLayout>
+    </LinearLayout>
+	
+    <FrameLayout
+        android:id="@+id/content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/home_layout_bar"
+        android:layout_marginTop="-12.0dip" >
+        
+         <ListView
+                android:id="@+id/call_lv_item"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:background="#fff1f1f1"
+                android:cacheColorHint="#fff1f1f1"
+                android:divider="@drawable/list_divider"
+                android:fadingEdge="vertical"
+                android:fadingEdgeLength="3.0dip"
+                android:listSelector="@drawable/list_selector" />
+        
+     </FrameLayout>   
+</RelativeLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+        >
+    
+    <com.gzqilin.weimi.view.TitleLayout
+        android:id="@+id/argproduct_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        />
+    
+    <ScrollView 
+        		android:layout_below="@+id/argproduct_title"
+        		android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+        <RelativeLayout android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+            <ImageView
+                    android:id="@+id/arg_pic"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/m_marleft"
+                    android:layout_marginLeft="@dimen/m_marleft"
+                    android:layout_marginTop="@dimen/m_marleft"
+                    android:background="@drawable/test_news_detail"/>
+
+            <TextView android:id="@+id/arg_title"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_below="@id/arg_pic"
+                      android:layout_centerHorizontal="true"
+                      android:layout_marginTop="@dimen/m_marleft"
+                      android:textSize="@dimen/first_size"/>
+
+
+            <TextView
+                	android:id="@+id/arg_content"
+                    style="@style/wrap_content"
+                    android:layout_below="@id/arg_title"
+                    android:layout_marginRight="@dimen/m_marleft"
+                    android:layout_marginLeft="@dimen/m_marleft"
+                    android:layout_marginTop="@dimen/m_marleft"
+                    android:textSize="@dimen/secend_size"/>
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
